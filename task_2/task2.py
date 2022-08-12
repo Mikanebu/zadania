@@ -12,8 +12,10 @@ with open('csv/original.csv') as csv_file:
     next(csv_reader,None)
     for date in csv_reader:
         date[0] = date_time.strftime(("%d-%m-%Y"))
-        print(date)
-        a = input('what is the current population ?')
-        date[2] = a
+        for i in csv_reader:
+            a = i[2]
+            print(a)
+            print(date[2])
+            date[2] = str(int(date[2]) + int(a))
         csv_file.readline() 
         writer.writerow(date)
