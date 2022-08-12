@@ -14,8 +14,6 @@ with open('data/original.csv') as csv_file:
         date[0] = date_time.strftime(("%d-%m-%Y"))
         for i in csv_reader:
             a = i[2]
-            print(a)
-            print(date[2])
             date[2] = str(int(date[2]) + int(a))
         csv_file.readline() 
         writer.writerow(date)
