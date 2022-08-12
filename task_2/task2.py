@@ -4,9 +4,9 @@ from datetime import datetime
 
 
 
-with open('csv/original.csv') as csv_file:
+with open('date/original.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
-    writer = csv.writer(open('csv/result.csv', 'w', newline=''))
+    writer = csv.writer(open('date/result.csv', 'w', newline=''))
     date_time = datetime.now()
     writer.writerow(["year", "region", "value"])
     next(csv_reader,None)
