@@ -1,3 +1,3 @@
 # zadania
 
-# Бұл 2 тапсырма Оны мен datetime арқылы жасадым value-ді input арқылы жасадым
+# This is 2 tasks I did it with datetime I did value with for
